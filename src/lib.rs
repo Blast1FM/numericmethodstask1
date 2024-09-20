@@ -1,8 +1,7 @@
 use std::cmp::Ordering;
-
 pub struct FunctionIterator
 {
-    delta: f64,
+    pub delta: f64,
     current_x : f64,
     function : Box<dyn Fn(f64) -> f64>,
     limits : (f64,f64)
